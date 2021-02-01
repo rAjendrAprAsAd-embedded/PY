@@ -10,15 +10,16 @@ for i in range(0,x):
 	num= int(input('Enter value'))
 	ar.append(num)
 y=x-1
+
 for i in range(0,x):
 	k=0
 	for j in range(0,y):
 		if(ar[j]>ar[j+1]):
-			ar[j]=ar[j]+ar[j+1]
-			ar[j+1]=ar[j]-ar[j+1]
-			ar[j]=ar[j]-ar[j+1]			
+			ar[j],ar[j+1]=ar[j+1],ar[j]
+			#ar[j+1]=ar[j]-ar[j+1]
+			#ar[j]=ar[j]-ar[j+1]			
 			k=k+1
-	x=x-1
+	x=x-1#last element will place in every iteration
 	if(k==0):
 		break
 y=y+1
