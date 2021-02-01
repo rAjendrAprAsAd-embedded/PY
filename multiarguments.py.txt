@@ -1,0 +1,20 @@
+#multiple arguments passing through functions
+
+#multiple arguments passing through functions
+
+def abc(a,*z):
+	print('passing through a:',a)
+	for x in z:
+		print('passing throgh args: ',x)
+
+def abcd(a,b,c,*z):
+	print('passing through a:',a)
+	print('passing through b:',b)
+	print('passing through c:',c)
+	for x in z:
+		print('passing throgh args: ',x)
+
+
+abc('a','b','c','d','e')
+print()
+abcd('a','b','c','d','e')
